@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | KanjiPractice</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 1080px; height: 1920px; background: #231F20"></canvas>
+    <script src="Build/Mobile.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Mobile.data.gz",
+        frameworkUrl: "Build/Mobile.framework.js.gz",
+        codeUrl: "Build/Mobile.wasm.gz",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "KanjiPractice",
+        productVersion: "0.1",
+      });
+    </script>
+  </body>
+</html>
