@@ -6,13 +6,13 @@
     <title>Unity WebGL Player | KanjiPractice</title>
   </head>
   <body style="text-align: center">
-    <canvas id="unity-canvas" style="width: 576px; height: 1024px; background: #231F20"></canvas>
+    <canvas id="unity-canvas" style="width: 1080px; height: 1920px; background: #231F20"></canvas>
     <script src="Build/Builds.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Builds.data",
-        frameworkUrl: "Build/Builds.framework.js",
-        codeUrl: "Build/Builds.wasm",
+        dataUrl: "Build/Builds.data.gz",
+        frameworkUrl: "Build/Builds.framework.js.gz",
+        codeUrl: "Build/Builds.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "KanjiPractice",
